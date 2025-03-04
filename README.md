@@ -1,2 +1,2 @@
-# Project -Click link
-(https://github.com/AnuGeorge39/Project.git)
+# Project - [Click here](https://github.com/AnuGeorge39/Project.git)
+
