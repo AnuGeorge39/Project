@@ -8,7 +8,8 @@ function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">ariussoft</Navbar.Brand>
+        <Navbar.Brand href="#home" id= "company_name">ariussoft</Navbar.Brand>
+        <Navbar.Brand id= "company_name1">Infotech Pvt Ltd</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
