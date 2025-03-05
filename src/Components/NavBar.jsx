@@ -11,6 +11,22 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+
+          <NavDropdown title="WHAT" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"> Mobile App Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Website Design</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Web Application Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">E-Commerce Website Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Search Engine Optimization</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Web Hosting</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Digital Marketing</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Social Media Campaigns</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Branding</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Advertising</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Package Design</NavDropdown.Item>
+              
+            </NavDropdown>
             <Nav.Link href="#features">WHAT</Nav.Link>
             <Nav.Link href="#pricing">WE</Nav.Link>
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
