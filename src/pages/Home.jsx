@@ -6,6 +6,7 @@ export default function Home() {
     <div>
       
         <UncontrolledExample/>
+        <p>text commi</p>
         </div>
   )
 }
