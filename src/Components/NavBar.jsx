@@ -2,35 +2,61 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import '../css/NavBar.css';
 
 function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">ariussoft</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+          <NavDropdown title="WHAT" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Software Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Mobile App Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Website Design</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Web Application Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">E-Commerce Website Development</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Search Engine Optimization </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Web Hosting</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Digital Marketing</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Social Media Campaigns</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Branding</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Advertising</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Package Design</NavDropdown.Item>
             </NavDropdown>
+            
+            <NavDropdown title="WE" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Ariussoft Infotech Pvt Ltd</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Arius Web Studio</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Think Thick</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Host Station</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Core Team</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Testimonials </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Insights</NavDropdown.Item>
+            </NavDropdown>
+            
+            <NavDropdown title="DO" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Portfolio</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Gallery</NavDropdown.Item>
+              </NavDropdown>
+              
+            <NavDropdown title="FOR" id="collapsible-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Clients</NavDropdown.Item>
+            </NavDropdown>
+            
+            <NavDropdown title="YOU" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Contact Us</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Feedback</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Get a Quote</NavDropdown.Item>
+            </NavDropdown>
+
+            <Navbar.Brand href="Contactus.jsx" className="Quote">Get a Quote</Navbar.Brand>
+           
+           
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
