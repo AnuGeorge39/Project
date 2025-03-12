@@ -1,80 +1,38 @@
 import React from 'react';
-import { Container, Typography, Grid, Card, CardContent, Box } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Slide1_aboutus from '../assets/Images/aboutus.jpg';
+import '../css/About_us.css';
 
-const StyledSection = styled('section')(({ theme }) => ({
-  padding: theme.spacing(8, 0),
-  backgroundColor: '#f8f9fa'
-}));
-
-const AboutCard = styled(Card)(({ theme }) => ({
-  height: '100%',
-  display: 'flex',
-  flexDirection: 'column',
-  transition: 'transform 0.3s ease-in-out',
-  '&:hover': {
-    transform: 'translateY(-5px)'
-  }
-}));
-
-export default function About_us() {
-  const features = [
-    {
-      title: 'Our Mission',
-      description: 'To provide innovative software solutions that empower businesses and individuals to achieve their digital transformation goals efficiently and effectively.'
-    },
-    {
-      title: 'Our Vision',
-      description: 'To become a leading force in the software industry by delivering cutting-edge solutions that drive technological advancement and create lasting value for our clients.'
-    },
-    {
-      title: 'Our Values',
-      description: 'Innovation, integrity, collaboration, and customer success are at the core of everything we do. We believe in fostering a culture of continuous learning and excellence.'
-    }
-  ];
-
+function Aboutus() {
   return (
-    <div>
-      <StyledSection>
-        <Container maxWidth="lg">
-          <Box textAlign="center" mb={6}>
-            <Typography variant="h2" component="h1" gutterBottom>
-              About Us
-            </Typography>
-            <Typography variant="h5" color="textSecondary" paragraph>
-              Transforming Ideas into Powerful Software Solutions
-            </Typography>
-          </Box>
+    <Card className="d-flex flex-row">
+      {/* Image Section */}
+      <Card.Img 
+        variant="top" 
+        src={Slide1_aboutus} 
+        className='aboutus_img' 
+        style={{ width: '40%', height: 'auto' }} // Adjust width and height for the image
+      />
 
-          <Grid container spacing={4}>
-            {features.map((feature, index) => (
-              <Grid item xs={12} md={4} key={index}>
-                <AboutCard elevation={2}>
-                  <CardContent>
-                    <Typography variant="h5" component="h2" gutterBottom>
-                      {feature.title}
-                    </Typography>
-                    <Typography variant="body1" color="textSecondary">
-                      {feature.description}
-                    </Typography>
-                  </CardContent>
-                </AboutCard>
-              </Grid>
-            ))}
-          </Grid>
+      {/* Text Section */}
+      <Card.Body className="aboutus_text" style={{ flex: 1 }}>
+        <Card.Title className="aboutus_title">About Us</Card.Title>
+        <Card.Text>
+          Ariussoft Infotech Pvt Ltd is a one-stop, A-to-Z solution for all IT consulting and project 
+          management services. Being a leading web solution provider, Ariussoft offers expertise
+          across web design, web application development, graphic design, and also some of the other 
+          recent web solutions like hosting services, social media management, digital marketing, 
+          mobile app development, etc. Through the years of exposure of over 20 years coupled with 
+          850+ clients, Ariussoft has molded itself to become a trusted company in the sector, 
+          capable of delivering actual results while also establishing the benchmark, the rest can only 
+          dream of reaching.
+        </Card.Text>
 
-          <Box mt={8} textAlign="center">
-            <Typography variant="h4" gutterBottom>
-              Why Choose Us?
-            </Typography>
-            <Typography variant="body1" color="textSecondary" paragraph>
-              With years of experience in software development and a passionate team of experts,
-              we deliver solutions that are scalable, secure, and tailored to your specific needs.
-              Our commitment to excellence and customer satisfaction sets us apart in the industry.
-            </Typography>
-          </Box>
-        </Container>
-      </StyledSection>
-    </div>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
   );
 }
+
+export default Aboutus;
