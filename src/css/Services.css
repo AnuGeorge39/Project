@@ -1,0 +1,32 @@
+/* Styling to make sure all cards have equal width and height */
+.custom-card {
+    width: 23%; /* Adjust width to fit 4 cards in one row */
+    height: 400px; /* You can adjust this based on your needs */
+    margin: 5px; /* Optional: Add some spacing between cards */
+  }
+  
+  .custom-card .card-img-top {
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* This ensures that the image covers the space without distortion */
+  }
+  
+  .custom-card .card-body {
+    height: 150px; /* Fixed height for card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align the button and text */
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: space-between; /* Distribute the cards evenly */
+    gap: 10px; /* Adds space between cards */
+  }
+
+  .services{
+    text-align: center;
+    font-size: 250%;
+    color: blueviolet;
+
+}
+  
