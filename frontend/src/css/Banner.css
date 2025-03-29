@@ -1,0 +1,17 @@
+.banner {
+    background: url('../assets/Images/img2.jpg') no-repeat center center/cover;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .banner-content {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
