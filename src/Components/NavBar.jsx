@@ -53,6 +53,7 @@ function CollapsibleExample() {
               <NavDropdown.Item href="#action/3.1">Contact Us</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Feedback</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Get a Quote</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/blog">Blog</NavDropdown.Item>
             </NavDropdown>
 
             <Navbar.Brand href="Contactus.jsx" className="Quote">Get a Quote</Navbar.Brand>

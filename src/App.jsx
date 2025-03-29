@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SoftwareDevelopment from './Components/software-development';
 import  Contact from './pages/contact.jsx';
 import Aboutus from './Components/About_us.jsx';
+import Blog from './pages/blog.jsx';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/aboutus ' element={<Aboutus/>}/>
         <Route path='/contact' element={< Contact/>}/>
+         <Route path='/blog' element={<Blog/>}/>
         <Route path="/software-development" element={<SoftwareDevelopment />} />
       </Routes>
     </Router> 
