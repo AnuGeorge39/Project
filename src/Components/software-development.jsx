@@ -14,7 +14,7 @@ function SoftwareDevelopment() {
       <Carousel.Item>
         <Image className='slide_img' src={Slide_1} />
         <Carousel.Caption>
-          <h3>WebSite Development</h3>
+          <h3>WebSite Developments</h3>
           <p> Process of building, programming, and maintaining websites and web applications.</p>
         </Carousel.Caption>
       </Carousel.Item>
