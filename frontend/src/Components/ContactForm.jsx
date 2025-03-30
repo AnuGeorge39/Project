@@ -15,7 +15,7 @@ const ContactForm = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center">Contact Us</h2>
+      <h2 className="text-center">Make An Enquiry</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>

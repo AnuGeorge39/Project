@@ -1,0 +1,5 @@
+.enquiry-form{
+    width: 23%; /* Adjust width to fit 4 cards in one row */
+    height: 400px; /* You can adjust this based on your needs */
+    margin: 5px; 
+}
